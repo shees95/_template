@@ -1,0 +1,38 @@
+# ===== Unreal Engine =====
+
+# Binaries / Intermediate / Saved (재생성 가능)
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+*.sln
+*.VC.db
+*.VC.opendb
+
+# Mac
+.DS_Store
+
+# Log files
+*.log
+
+# Crash reports
+Saved/Crashes/
+
+# Autosave
+Saved/Autosaves/
+
+# Unreal generated files
+*.xcodeproj
+*.xcworkspace
+
+# Package output
+*.pak
+*.uasset_backup
+
+# Editor temp
+*.tmp
