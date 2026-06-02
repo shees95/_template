@@ -53,32 +53,60 @@ _Template
 
 ## 🚫 4. .gitignore / .gitattributes 설정
 
-프로젝트 환경에 맞는 Git 설정을 적용합니다.
+프로젝트 유형에 맞는 설정 파일을 선택합니다.
 
-### .gitignore
-
-버전 관리가 필요 없는 파일 제외
-
-예시
+### C++ 프로젝트
 
 ```text
-Binaries/
-Intermediate/
-Saved/
-DerivedDataCache/
-.vs/
+cpp.gitignore
+    ↓
+.gitignore
 ```
 
-### .gitattributes
-
-Git LFS 및 텍스트 처리 설정
-
-예시
+### Unreal Engine 프로젝트
 
 ```text
-*.uasset filter=lfs diff=lfs merge=lfs -text
-*.umap   filter=lfs diff=lfs merge=lfs -text
+unreal.gitignore
+    ↓
+.gitignore
 ```
+
+### Git LFS 사용 시
+
+필요한 `.gitattributes` 파일의 이름을 변경합니다.
+
+```text
+unreal.gitattributes
+    ↓
+.gitattributes
+```
+
+---
+
+### 적용 예시
+
+```bash
+ren unreal.gitignore .gitignore
+ren unreal.gitattributes .gitattributes
+```
+
+또는
+
+```bash
+mv unreal.gitignore .gitignore
+mv unreal.gitattributes .gitattributes
+```
+
+---
+
+### 확인
+
+```bash
+git status
+```
+
+`.gitignore`, `.gitattributes` 파일이 정상적으로 적용되었는지 확인합니다.
+
 
 ---
 
