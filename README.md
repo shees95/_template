@@ -11,10 +11,25 @@ GitHub의 `_Template` 레포지토리를 기반으로 새로운 프로젝트를 
 ---
 
 ## 🖨️ 2. Repository 클론
+기존 원격 저장소 연결 확인
 
 ```bash
-git clone https://github.com/아이디/레포명.git
-cd 레포명
+git remote -v
+```
+
+예상 결과
+
+```bash
+origin  https://github.com/shees95/_template.git (fetch)
+origin  https://github.com/shees95/_template.git (push)
+```
+
+
+
+기존 원격 저장소 삭제, 새 원격 저장소 연결
+```bash
+git remote remove origin
+git remote add origin https://github.com/아이디/레포명.git
 ```
 
 원격 저장소 연결 확인
